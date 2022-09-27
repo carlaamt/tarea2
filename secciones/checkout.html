@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="http://fonts.cdnfonts.com/css/blinker" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/6a65e0d253.js" crossorigin="anonymous"></script>
+</head>
+<body class="text-white">
+    <header class="pt-4 mb-5">
+        <nav id="nav" class="navbar navbar-expand-lg pt-3">
+        <div class="container">
+            <a class="text-white navbar-brand" href="#"><h1>X-PLORACIÓN</h1></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 d-flex mx-auto justify-content-evenly w-100">
+                <li class="nav-item">
+                <a class="nav-link text-white" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link text-white" href="#">Conocenos</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link text-white" href="#">FAQ</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link text-white" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link text-white" href="#">Contacto</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link text-white" href="#">Mi cuenta</a>
+                </li>
+            </ul>
+                <button class="btn btn-outline-light rounded-pill boton-luna">Viaja a la luna</button>
+            </div>
+        </div>
+        </nav>
+    </header>
+<section class="formulario bg-white text-dark pb-5">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-md-6 order-md-last">
+                <h3 class="">TU PEDIDO</h3>
+                <ul class="list-group mb-3">
+                <li class="list-group-item d-flex justify-content-between lh-sm">
+                    <div>
+                    <h6 class="my-0">Product name</h6>
+                    <small class="text-muted">Brief description</small>
+                    </div>
+                    <span class="text-muted">$12</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between lh-sm">
+                    <div>
+                    <h6 class="my-0">Second product</h6>
+                    <small class="text-muted">Brief description</small>
+                    </div>
+                    <span class="text-muted">$8</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between lh-sm">
+                    <div>
+                    <h6 class="my-0">Third item</h6>
+                    <small class="text-muted">Brief description</small>
+                    </div>
+                    <span class="text-muted">$5</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between bg-light">
+                    <div class="text-success">
+                    <h6 class="my-0">Promo code</h6>
+                    <small>EXAMPLECODE</small>
+                    </div>
+                    <span class="text-success">−$5</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                    <span>Total (USD)</span>
+                    <strong>$20</strong>
+                </li>
+                </ul>
+
+                <form class="card p-2">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Promo code">
+                    <button type="submit" class="btn btn-secondary">Redeem</button>
+                </div>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h3 class="mb-3">DETALLES DE FACTURACIÓN</h3>
+                <form class="needs-validation" novalidate>
+                <div class="row g-3">
+
+                    <div class="col-12">
+                    <label for="comprobante" class="form-label">¿Boleta o Factura?</label>
+                    <select class="form-select" id="comprobante">
+                        <option value="">Elige tu tipo de comprobante</option>
+                        <option>Boleta</option>
+                        <option>Factura</option>
+                    </select>
+                    </div>
+
+                    <div class="col-12">
+                    <label for="rut" class="form-label">Rut de Empresa o Persona Natural</label>
+                    <input type="number" class="form-control" id="rut">
+                    </div>
+
+                    <div class="col-sm-6">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                        Su nombre es requerido
+                    </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                    <label for="apellido" class="form-label">Apellidos</label>
+                    <input type="text" class="form-control" id="apellido" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                        Sus apellidos son requeridos
+                    </div>
+                    </div>
+
+                    <div class="col-12">
+                        <label for="pais" class="form-label">País / Región</label>
+                        <input type="text" class="form-control" id="pais" required>
+                    <div class="invalid-feedback">
+                        Su país o región son necesarios
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                    <label for="address" class="form-label">Dirección de la calle</label>
+                    <input type="text" class="form-control" id="address" required>
+                    <div class="invalid-feedback">
+                        Ingrese su dirección por favor
+                    </div>
+                    </div>
+
+                    <div class="col-md-12">
+                    <label for="provincia" class="form-label">Provincia<span class="text-muted"> (Opcional)</span></label>
+                    <select class="form-select" id="provincia">
+                        <option value=""></option>
+                        <option>Provincia de Arica</option>
+                        <option>Provincia de Parinacota</option>
+                        <option>Provincia de Iquique</option>
+                        <option>Provincia de Tamarugal</option>
+                        <option>Provincia de Tocopilla</option>
+                        <option>Provincia de El Loa</option>
+                        <option>Provincia de Antofagasta</option>
+                        <option>Provincia de Chañaral</option>
+                        <option>Provincia de Copiapó</option>
+                        <option>Provincia de Huasco</option>
+                        <option>Provincia de Elqui</option>
+                        <option>Provincia de Limarí</option>
+                        <option>Provincia de Choapa</option>
+                        <option>Provincia de Petorca</option>
+                        <option>Provincia de Los Andes</option>
+                        <option>Provincia de San Felipe de Aconcagua</option>
+                        <option>Provincia de Quillota</option>
+                        <option>Provincia de Valaparaíso</option>
+                        <option>Provincia de San Antonio</option>
+                        <option>Provincia de Isla de Pascua</option>
+                        <option>Provincia de Marga Marga</option>
+                        <option>Provincia de Arica</option>
+                        <option>Otra</option>
+                    </select>
+                    </div>
+
+                    <div class="col-md-12">
+                        <label for="city" class="form-label">Localidad / Ciudad</label>
+                        <select class="form-select" id="city" required>
+                            <option value=""></option>
+                            <option>Santiago</option>
+                            <option>Otra</option>
+                        </select>
+                    </div>
+
+                    <div class="col-12">
+                        <label for="telefono" class="form-label">Teléfono</label>
+                        <input type="tel" class="form-control" id="telefono" required>
+                    <div class="invalid-feedback">
+                        Su número de teléfono es necesario
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                    <label for="mail" class="form-label">Dirección de Correo Electrónico</label>
+                    <input type="email" class="form-control" id="mail" required>
+                    <div class="invalid-feedback">
+                        Ingrese su dirección de correo por favor
+                    </div>
+                    </div>
+
+                </div>
+
+                <h3 class="my-4">INFORMACIÓN ADICIONAL</h3>
+
+                <div class="col-12">
+                    <label for="floatingTextarea2">Notas del pedido</label>
+                    <textarea class="form-control" id="floatingTextarea2" style="height: 180px"></textarea>
+                </div>
+
+                <div class="form-check ms-4 mt-4 mb-5">
+                    <input type="checkbox" class="form-check-input" id="same-address">
+                    <label class="form-check-label" for="same-address">Yes, I’m ok with you sending me additional newsletter and email content</label>
+                </div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer border-top border-1">
+    <div class="container">
+        <div class="row py-5">
+            <div class="col-6">
+                <h4>X-PEDICIÓN</h4>
+            </div>
+            <div class="col-6 pt-4">
+                <form action="" class="sub">
+                    <label class="mb-3" for="email">Suscribete a nuestras noticias</label>
+                    <div class="position-relative d-flex">
+                    <input class="form-control" type="text" id="email" placeholder="Ingresa tu mail">
+                    <button type="submit">Suscribete</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8">
+                <div class="row">
+                    <div class="col-3">
+                        <ul>
+                            <li class="mb-4"><h5>PRODUCTOS</h5></li>
+                            <li class="mb-3"><a href="#">Shop</a></li>
+                            <li class="mb-3"><a href="#">Destinos</a></li>
+                            <li class="mb-3"><a href="#">Nuestras naves</a></li>
+                            <li class="mb-3"><a href="#">Precios</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <ul>
+                            <li class="mb-4"><h5>COMPAÑIA</h5></li>
+                            <li class="mb-3"><a href="#">Sobre X-pedición</a></li>
+                            <li class="mb-3"><a href="#">Clientes</a></li>
+                            <li class="mb-3"><a href="#">Trabaja con nosotros</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <ul>
+                            <li class="mb-4"><h5>RECURSOS</h5></li>
+                            <li class="mb-3"><a href="#">Blog</a></li>
+                            <li class="mb-3"><a href="#">Centro de ayuda</a></li>
+                            <li class="mb-3"><a href="#">Prensa</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <ul>
+                            <li class="mb-4"><h5>CONTACTO</h5></li>
+                            <li class="mb-3"><a href="#">Eres astronauta</a></li>
+                            <li class="mb-3"><a href="#">Eres pasajero</a></li>
+                            <li class="mb-3"><a href="#">Contactar con ventas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 text-end">
+                <h5>PROYECTO APOYADO POR</h5>
+                <a href="#"><h4>Duoc UC</h4></a>
+            </div>
+        </div>
+        <div class="row py-3 border-top border-1">
+            <div class="col-4">
+                <p>Copyright © 2022  Diseño y Programación web.</p>
+            </div>
+            <div class="col-4">
+                <ul>
+                    <li>Términos y condiciones Políticas de privacidad</li>
+                    <li>Froilán Roa 7107, La Florida, Región Metropolitana</li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <ul class="d-flex justify-content-end">
+                    <li><a href="#"><i class="me-3 fs-2 fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="me-3 fs-2 fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="me-3 fs-2 fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="me-3 fs-2 fa-brands fa-whatsapp"></i></a></li>
+                    <li><a href="#"><i class="fs-2 fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="../assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+</body>
+</html>
